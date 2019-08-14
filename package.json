@@ -1,0 +1,26 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "Interview Boilerplate.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "npm run build && node dist/index.js",
+    "serve": "npm run build && node dist/index.js",
+    "test": "npm run build && mocha --require @babel/register --recursive"
+  },
+  "author": "Jason Bennett",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
